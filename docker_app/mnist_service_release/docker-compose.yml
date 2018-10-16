@@ -1,0 +1,16 @@
+version: "3"
+services:
+  web:
+    links:
+      - "db"
+      - "db:database"
+    image: iamdonnie/mnist_service:web_base
+    restart: always
+    ports:
+      - "8000:80"
+  db:
+    image: cassandra
+    ports:
+
+      - "9042:9042"
+    restart: always

@@ -1,0 +1,22 @@
+version: "3"
+services:
+  # os:
+  #   image: ubuntu:16.04
+  #   command: "/bin/bash"
+  #   links:
+  #     - "db"
+  web:
+    # depends_on:
+    #   - db
+    links:
+      - "db"
+      - "db:database"
+    image: iamdonnie/mnist_service:latest
+    restart: always
+    ports:
+      - "8000:80"
+  db:
+    image: cassandra
+    ports:
+      - "9042:9042"
+    restart: always
