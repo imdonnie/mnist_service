@@ -4,7 +4,7 @@ services:
     links:
       - "db"
       - "db:database"
-    image: iamdonnie/mnist_service:latest
+    image: iamdonnie/mnist_service_release:latest
     restart: always
     ports:
       - "8000:80"
