@@ -96,8 +96,7 @@ def eval_image_and_save():
         #     print(res)
         #     res_list.append(res)
         session.execute(sql_insert_rcd)
-
-        return sql_insert_rcd
+        return eval_value
 
 @app.route("/test")
 def hello():
