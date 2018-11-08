@@ -11,10 +11,14 @@
     - [3.2. 路由绑定](#32-路由绑定)
     - [3.3. 数据交互](#33-数据交互)
     - [3.4. 接口调试](#34-接口调试)
-- [4. Docker学习和使用](#4-docker学习和使用)
-    - [4.1. 概念理解](#41-概念理解)
-    - [4.2. Dockerfile和Container](#42-dockerfile和container)
-    - [4.3. 更多Container操作](#43-更多container操作)
+- [4. Cassandra数据库](#4-cassandra数据库)
+    - [4.1. 未完成](#41-未完成)
+- [5. Docker学习和使用](#5-docker学习和使用)
+    - [5.1. 概念理解](#51-概念理解)
+    - [5.2. Dockerfile和Container](#52-dockerfile和container)
+    - [5.3. 更多Container操作和集群配置](#53-更多container操作和集群配置)
+    - [5.4. 容器编排入门](#54-容器编排入门)
+    - [5.5. Docker调试](#55-docker调试)
 
 <!-- /TOC -->
 
@@ -119,9 +123,13 @@ def login():
 最后说一点基于之前网页开发的建议，由于项目中会涉及到文件上传这种操作，所以在调试的过程中肯定需要反复的上传文件或者提交表单，这样如果直接用浏览器来进行调试（比如在Google Chrome中按F12），可能构造测试数据的过程会很复杂，而且也有很多的限制。因此我在调试的过程中用到了[Postman](https://www.getpostman.com/)，这是一个用于接口调试（不仅仅限于网页）的工具，借助Postman可以很容易地构造各种http报文，包括Get、Post方法的选择、提交文件、构造复杂表单、构造http头等等，最后放一张Postman的表单构造器截图，还是很强大的：
 ![Postman构造表单](https://raw.githubusercontent.com/imdonnie/playground/master/Markdown-Images/Postman构造表单.png)
 
-# 4. Docker学习和使用
+# 4. Cassandra数据库
 
-## 4.1. 概念理解
+## 4.1. 未完成
+
+# 5. Docker学习和使用
+
+## 5.1. 概念理解
 
 如果说对于有一定Python基础的人来说，写出一个简单的Flask应用可能只是一两个小时的事情，那么Docker显然没有这么容易，其中各种概念、逻辑甚至是哲学都可能成为运用Docker的阻碍。
 仍然是从[文档](https://docs.docker.com/get-started/)开始。第一部分主要是对Docker的设计目的的介绍，同时也引出了一些基本的概念。引用一段Docker原文的讲解：
@@ -139,7 +147,7 @@ def login():
 
 理解：利用docker的一些好处，应用与操作系统解耦和，便于持续集成和持续发布，优化资源配置。**本项目为了简化生成image的过程，结合DockerHub和GitHub配置了一个简单的持续集成服务，具体实现方法见之后的章节。**
 
-## 4.2. Dockerfile和Container
+## 5.2. Dockerfile和Container
 
 第二部分继续介绍了一些概念以及这些概念之间的关系做了介绍：
 >It’s time to begin building an app the Docker way. We start at the bottom of the hierarchy of such an app, which is a container, which we cover on this page. Above this level is a service, which defines how containers behave in production, covered in Part 3. Finally, at the top level is the stack, defining the interactions of all the services, covered in Part 5.
@@ -241,7 +249,7 @@ friendlyhello         latest              326387cea398
 
 看到friendlyhello已经成功编出来，那么Dockerfile这部分就基本ok了，接下来可以继续参考文档，运行一下就行。
 
-## 4.3. 更多Container操作
+## 5.3. 更多Container操作和集群配置
 
 前文已经完成了一个简单的Dockefile的编写，但是明显还有很多问题悬而未决，比如：应该如何调试Container？如果程序运行的环境比较复杂时可以用一个Dockerfile搞定么（比如Python+Tensorflow+Flask+Cassandra...）？不同的Container之间如果同时运行，那么它们之间应该如何交互呢？这些问题可能在这一节无法全部解决，但是这都是要完成项目所无法绕开的。
 
@@ -252,7 +260,7 @@ friendlyhello         latest              326387cea398
 
 `docker-compose.yml`
 
-```YML
+```YAML
 version: "3"
 services:
   web:
@@ -308,4 +316,39 @@ docker stack deploy -c docker-compose.yml getstartedlab
 `docker swarm leave --force`
 
 理解：运行状态下的多个概念，stack>service>container(=running image)，or image+Dockerfile=container, container+docker-compose.yml=service
-再次强调，Dockerfile定义了image的启动（比如加载依赖，环境变量，运行和编译指令，类似Makefile），YAML定义了一组container的启动（比如资源占用，端口映射，scale设置，负载均衡，类似一个资源调度的配置文件）
+再次强调，Dockerfile定义了image的启动（比如加载依赖，环境变量，运行和编译指令，类似Makefile），YAML定义了一组container的启动（比如资源占用，端口映射，scale设置，负载均衡，类似一个资源调度的配置文件）。
+
+基于项目本身，我们需要的环境主体主要是一个**服务器后端程序（Flask+Tenforslow）** 加上一个 **数据库服务（Cassandra）**，在我的实现过程中，这两部分是很难融合的，也就是说必须在两个Container中分别运行这两部分，并且让它们之间能够正确交互（因为项目中需要从数据库读写数据）。
+
+基于这种需求，我们需要进一步了解Docker中的**容器编排**。
+
+## 5.4. 容器编排入门
+
+当刚刚写完第一个Dockfile时，对于整个项目还是信心满满的，毕竟已经摸到了Docker门槛的边缘，但是很快就发现了一个残酷的事实，那就是如何把服务器和数据库配置到同一个环境里。我试了以Python做parent image，在上面配Cassandra，也试过以Cassandra为parent image，在上面配置python，但是事实是这些都不是正确的办法，服务器程序和数据库不可能写在同一个Dockerfile中。此时还是官方文档来救了命：
+>Create a file called docker-compose.yml in your project directory and paste the following:
+
+```YAML
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+     - "5000:5000"
+  redis:
+    image: "redis:alpine"
+```
+
+看起来似乎只有短短几行，但是其实这就已经完成了单个Container绝对无法做到事情，那就是启动两个相对独立的服务：
+>This Compose file defines two services, **web** and **redis**. The web service:
+>
+> - Uses an image that’s built from the Dockerfile in the current directory.
+>
+>- Forwards the exposed port 5000 on the container to port 5000 on the host machine. We use the default port for the Flask web server, 5000.
+>
+>The redis service uses a public Redis image pulled from the Docker Hub registry.
+
+理解：docker-compose.yml定义了两个service（其实就是两个container，但是同时带有一些配置）的启动方式，以及它们的启动顺序，以此我们可以再进一步理解container，虽然container是很完整的runtime，甚至是os，但是还是应该将其视为一个进程比较好，最终打包发布出来的**服务**不是某一个单一的container，而是**一堆container**的协作。类比本机的开发环境，一个Web服务器上可能需要运行Node.js、Apache、MySQL等等，着每一个服务在Docker的逻辑中就应该由一个Container来实现。
+
+具体的容器编排还会涉及网络、环境配置等等，因此还是需要阅读[Compose官方文档的相关章节](https://docs.docker.com/compose/gettingstarted/)，在此就不再赘述了。
+
+## 5.5. Docker调试
