@@ -34,7 +34,7 @@ def evaluateImage(image_path):
     img = img.reshape(-1, 784) / 255.0
     # img = (img.reshape(-1,784)).astype("float32")/255
     predict = new_model.predict_classes(img)
-    # cv2.imshow("Image1", raw_image)
+    # cv2.imshow("Image1", raw_image) 
     # cv2.waitKey(0)
     print("image:{0} is {1}".format(image_path, predict))
     return str(img), int(predict)
@@ -96,7 +96,10 @@ def eval_image_and_save():
         #     print(res)
         #     res_list.append(res)
         session.execute(sql_insert_rcd)
-        return eval_value
+        return eval_value  
+
+
+
 
 @app.route("/test")
 def hello():
