@@ -1,39 +1,39 @@
-<!-- ![test](https://raw.githubusercontent.com/imdonnie/playground/master/Markdown-Images/GitHub¸öÈËÊ×Ò³.png) -->
+<!-- ![test](https://raw.githubusercontent.com/imdonnie/playground/master/Markdown-Images/GitHubä¸ªäººé¦–é¡µ.png) -->
 
 #
 
 <!-- TOC -->
 
-- [1. ¼¼ÊõÕ»ºÍ¼Ü¹¹¼ò½é](#1-¼¼ÊõÕ»ºÍ¼Ü¹¹¼ò½é)
-- [2. ÎÄµµÄÚÈİ](#2-ÎÄµµÄÚÈİ)
-- [3. FlaskºÍ½Ó¿Úµ÷ÊÔ](#3-flaskºÍ½Ó¿Úµ÷ÊÔ)
-    - [3.1. ¿ìËÙ¿ªÊ¼](#31-¿ìËÙ¿ªÊ¼)
-    - [3.2. Â·ÓÉ°ó¶¨](#32-Â·ÓÉ°ó¶¨)
-    - [3.3. Êı¾İ½»»¥](#33-Êı¾İ½»»¥)
-    - [3.4. ½Ó¿Úµ÷ÊÔ](#34-½Ó¿Úµ÷ÊÔ)
-- [4. DockerÑ§Ï°ºÍÊ¹ÓÃ](#4-dockerÑ§Ï°ºÍÊ¹ÓÃ)
-    - [4.1. ¸ÅÄîÀí½â](#41-¸ÅÄîÀí½â)
-    - [4.2. DockerfileºÍContainer](#42-dockerfileºÍcontainer)
-    - [4.3. ¸ü¶àContainer²Ù×÷](#43-¸ü¶àcontainer²Ù×÷)
+- [1. æŠ€æœ¯æ ˆå’Œæ¶æ„ç®€ä»‹](#1-æŠ€æœ¯æ ˆå’Œæ¶æ„ç®€ä»‹)
+- [2. æ–‡æ¡£å†…å®¹](#2-æ–‡æ¡£å†…å®¹)
+- [3. Flaskå’Œæ¥å£è°ƒè¯•](#3-flaskå’Œæ¥å£è°ƒè¯•)
+    - [3.1. å¿«é€Ÿå¼€å§‹](#31-å¿«é€Ÿå¼€å§‹)
+    - [3.2. è·¯ç”±ç»‘å®š](#32-è·¯ç”±ç»‘å®š)
+    - [3.3. æ•°æ®äº¤äº’](#33-æ•°æ®äº¤äº’)
+    - [3.4. æ¥å£è°ƒè¯•](#34-æ¥å£è°ƒè¯•)
+- [4. Dockerå­¦ä¹ å’Œä½¿ç”¨](#4-dockerå­¦ä¹ å’Œä½¿ç”¨)
+    - [4.1. æ¦‚å¿µç†è§£](#41-æ¦‚å¿µç†è§£)
+    - [4.2. Dockerfileå’ŒContainer](#42-dockerfileå’Œcontainer)
+    - [4.3. æ›´å¤šContaineræ“ä½œ](#43-æ›´å¤šcontaineræ“ä½œ)
 
 <!-- /TOC -->
 
-# 1. ¼¼ÊõÕ»ºÍ¼Ü¹¹¼ò½é
+# 1. æŠ€æœ¯æ ˆå’Œæ¶æ„ç®€ä»‹
 
-# 2. ÎÄµµÄÚÈİ
+# 2. æ–‡æ¡£å†…å®¹
 
-# 3. FlaskºÍ½Ó¿Úµ÷ÊÔ
+# 3. Flaskå’Œæ¥å£è°ƒè¯•
 
-## 3.1. ¿ìËÙ¿ªÊ¼
+## 3.1. å¿«é€Ÿå¼€å§‹
 
-Ê×ÏÈ£¬´ÓÏîÄ¿ÖĞ×îÖ±¹ÛµÄ²¿·Ö¿ªÊ¼£¬Ò²¾ÍÊÇFlaskµÄ°²×°ºÍÅäÖÃ¡£[FlaskÏîÄ¿µÄ¹ÙÍø](flask.pocco.org)ÒÑ¾­¶Ô°²×°ºÍÅäÖÃ×öÁËºÜÏêÏ¸µÄËµÃ÷¡£Èç¹ûÕæµÄÓöµ½Ê²Ã´ÎÊÌâ£¬ÍøÉÏ¹ØÓÚFlaskµÄ½Ì³ÌÒ²ºÜ·á¸»¡£Òò´ËÖ»ÒªPython»·¾³Ã»Ê²Ã´ÎÊÌâ£¬FlaskºÜ¿ì¾Í¿ÉÒÔ°²×°Íê³É£¬»ù±¾ÉÏ°²×°¾ÍÊÇ¼¸ĞĞÃüÁî¾ÍokÁË£¬µ±È»ËÙ¶È²»Ò»¶¨ºÜ¿ì¡£¹ÙÍø¸ø³öµÄ°²×°ÃüÁîÈçÏÂ£º
+é¦–å…ˆï¼Œä»é¡¹ç›®ä¸­æœ€ç›´è§‚çš„éƒ¨åˆ†å¼€å§‹ï¼Œä¹Ÿå°±æ˜¯Flaskçš„å®‰è£…å’Œé…ç½®ã€‚[Flaské¡¹ç›®çš„å®˜ç½‘](flask.pocco.org)å·²ç»å¯¹å®‰è£…å’Œé…ç½®åšäº†å¾ˆè¯¦ç»†çš„è¯´æ˜ã€‚å¦‚æœçœŸçš„é‡åˆ°ä»€ä¹ˆé—®é¢˜ï¼Œç½‘ä¸Šå…³äºFlaskçš„æ•™ç¨‹ä¹Ÿå¾ˆä¸°å¯Œã€‚å› æ­¤åªè¦Pythonç¯å¢ƒæ²¡ä»€ä¹ˆé—®é¢˜ï¼ŒFlaskå¾ˆå¿«å°±å¯ä»¥å®‰è£…å®Œæˆï¼ŒåŸºæœ¬ä¸Šå®‰è£…å°±æ˜¯å‡ è¡Œå‘½ä»¤å°±okäº†ï¼Œå½“ç„¶é€Ÿåº¦ä¸ä¸€å®šå¾ˆå¿«ã€‚å®˜ç½‘ç»™å‡ºçš„å®‰è£…å‘½ä»¤å¦‚ä¸‹ï¼š
 
 ```Shell
 $ pip install flask
  * flask is installed
 ```
 
-ÕâÀïµÄhello.pyÔÚ¹ÙÍøÉÏÒ²¸ø³öÁË[Ô´´úÂë](http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application)£¬ºÜ¼òµ¥µÄÒ»¶Î£º
+è¿™é‡Œçš„hello.pyåœ¨å®˜ç½‘ä¸Šä¹Ÿç»™å‡ºäº†[æºä»£ç ](http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application)ï¼Œå¾ˆç®€å•çš„ä¸€æ®µï¼š
 
 ```Python
 from flask import Flask
@@ -44,7 +44,7 @@ def hello_world():
     return 'Hello, World!'
 ```
 
-°´ÕÕ¹ÙÍø¸ø³öµÄ·½Ê½ÔËĞĞ£º
+æŒ‰ç…§å®˜ç½‘ç»™å‡ºçš„æ–¹å¼è¿è¡Œï¼š
 
 ```shell
 $ export FLASK_APP=hello.py
@@ -52,7 +52,7 @@ $ flask run
  * Running on http://127.0.0.1:5000/
 ```
 
-ÏÔÊ¾ÒÑ¾­ÔËĞĞÔÚÁË±¾»úµÄ5000¶Ë¿ÚÉÏ£¬ÖÁ´ËFlaskµÄ»·¾³ÉèÖÃÍê³É£¬²¢ÄÜÕı³£ÔËĞĞ¡£ĞèÒª×¢ÒâµÄÒ»µãÊÇ£¬ÓÉÓÚÎÒÊÇÔÚwindows»·¾³ÏÂ½øĞĞµÄ¿ª·¢£¬ËùÒÔ²¢²»ÄÜÖ±½ÓÊ¹ÓÃ`export`ÃüÁî¶Ô»·¾³±äÁ¿½øĞĞÉèÖÃ£¬²»¹ı²»ÓÃµ£ĞÄ£¬¹ÙÍøÒÑ¾­¸ø³öÁËwindowsÏÂÓ¦¸ÃÈçºÎÉèÖÃ»·¾³±äÁ¿µÄÖ¸µ¼£º
+æ˜¾ç¤ºå·²ç»è¿è¡Œåœ¨äº†æœ¬æœºçš„5000ç«¯å£ä¸Šï¼Œè‡³æ­¤Flaskçš„ç¯å¢ƒè®¾ç½®å®Œæˆï¼Œå¹¶èƒ½æ­£å¸¸è¿è¡Œã€‚éœ€è¦æ³¨æ„çš„ä¸€ç‚¹æ˜¯ï¼Œç”±äºæˆ‘æ˜¯åœ¨windowsç¯å¢ƒä¸‹è¿›è¡Œçš„å¼€å‘ï¼Œæ‰€ä»¥å¹¶ä¸èƒ½ç›´æ¥ä½¿ç”¨`export`å‘½ä»¤å¯¹ç¯å¢ƒå˜é‡è¿›è¡Œè®¾ç½®ï¼Œä¸è¿‡ä¸ç”¨æ‹…å¿ƒï¼Œå®˜ç½‘å·²ç»ç»™å‡ºäº†windowsä¸‹åº”è¯¥å¦‚ä½•è®¾ç½®ç¯å¢ƒå˜é‡çš„æŒ‡å¯¼ï¼š
 
 ```Python
 If you are on Windows, the environment variable syntax depends on command line interpreter. On Command Prompt:
@@ -61,14 +61,14 @@ And on PowerShell:
   PS C:\path\to\app> $env:FLASK_APP = "hello.py"
 ```
 
-×îºó²¹³äÒ»µã£¬ËäÈ»¹ÙÍøÉÏ¸ø³öÆô¶¯FlaskµÄ·½·¨ÊÇÏÈÉèÖÃFLASK_APP»·¾³±äÁ¿£¬È»ºóÔÙrun£¬µ«ÊÇÕâÑùÆäÊµ²¢²»ÊÇºÜ·½±ã£¬ÎÒµÄ×ö·¨ÊÇÖ±½ÓÔÚÔ´´úÂë×îÏÂÃæ¼ÓÉÏmainº¯Êı×÷ÎªÈë¿Ú£º
+æœ€åè¡¥å……ä¸€ç‚¹ï¼Œè™½ç„¶å®˜ç½‘ä¸Šç»™å‡ºå¯åŠ¨Flaskçš„æ–¹æ³•æ˜¯å…ˆè®¾ç½®FLASK_APPç¯å¢ƒå˜é‡ï¼Œç„¶åå†runï¼Œä½†æ˜¯è¿™æ ·å…¶å®å¹¶ä¸æ˜¯å¾ˆæ–¹ä¾¿ï¼Œæˆ‘çš„åšæ³•æ˜¯ç›´æ¥åœ¨æºä»£ç æœ€ä¸‹é¢åŠ ä¸Šmainå‡½æ•°ä½œä¸ºå…¥å£ï¼š
 
 ```Python
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
 ```
 
-ÕâÑùÖ±½ÓÔËĞĞÔ´´úÂë¾ÍokÁË£º
+è¿™æ ·ç›´æ¥è¿è¡Œæºä»£ç å°±okäº†ï¼š
 
 ```Shell
 D:\github_repos\mnist_service\docker_app\webapp> python app.py
@@ -81,9 +81,9 @@ D:\github_repos\mnist_service\docker_app\webapp> python app.py
  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
 ```
 
-## 3.2. Â·ÓÉ°ó¶¨
+## 3.2. è·¯ç”±ç»‘å®š
 
-FlaskµÄ°²×°ÒÑ¾­»ù±¾Íê³ÉÁË£¬µ«ÊÇ×îÖÕÏîÄ¿ÒªÊµÏÖµÄ¹¦ÄÜÏÔÈ»²»ÊÇhello.pyÕâÃ´¼òµ¥£¬Òò´ËÒÔ¼°ÍùÏÂ¿´ÎÄµµ£¬µÚÒ»¸ö±È½ÏÖØÒªµÄ²¿·Ö¾ÍÊÇ**Â·ÓÉ**£¬Õâ¸ö¸ÅÄîÆäÊµºÜ¼òµ¥£¬¿ÉÒÔÖ±½ÓÀí½â³É½«**Â·¾¶**ºÍÒ»¸ö**¶¯×÷**°ó¶¨ÆğÀ´£¬ÒÔ¹ÙÍøÉÏ¸ø³öµÄ´úÂëÎªÀı£º
+Flaskçš„å®‰è£…å·²ç»åŸºæœ¬å®Œæˆäº†ï¼Œä½†æ˜¯æœ€ç»ˆé¡¹ç›®è¦å®ç°çš„åŠŸèƒ½æ˜¾ç„¶ä¸æ˜¯hello.pyè¿™ä¹ˆç®€å•ï¼Œå› æ­¤ä»¥åŠå¾€ä¸‹çœ‹æ–‡æ¡£ï¼Œç¬¬ä¸€ä¸ªæ¯”è¾ƒé‡è¦çš„éƒ¨åˆ†å°±æ˜¯**è·¯ç”±**ï¼Œè¿™ä¸ªæ¦‚å¿µå…¶å®å¾ˆç®€å•ï¼Œå¯ä»¥ç›´æ¥ç†è§£æˆå°†**è·¯å¾„**å’Œä¸€ä¸ª**åŠ¨ä½œ**ç»‘å®šèµ·æ¥ï¼Œä»¥å®˜ç½‘ä¸Šç»™å‡ºçš„ä»£ç ä¸ºä¾‹ï¼š
 
 ```Python
 @app.route('/hello')
@@ -91,11 +91,11 @@ def hello():
     return 'Hello, World'
 ```
 
-ÕâÒ»¶Î¾ÍÊÇ½«'/hello'ÕâÒ»Â·¾¶ºÍhello()º¯Êı½øĞĞÁË°ó¶¨£¬ÕâÑùµ±ÓÃ»§·ÃÎÊ``127.0.0.1:80/hello``Ê±£¬¾Í»á´¥·¢`hello()`º¯Êı£¬Ò²¾ÍÊÇ»á·µ»Ø'Hello£¬ World'Õâ¸ö×Ö·û´®¡£Àí½âÁËÕâÖÖ**°ó¶¨**Âß¼­£¬ÄÇÃ´ÓÃÂ·ÓÉÄÜÊµÏÖÄÄĞ©¹¦ÄÜ¾ÍÍêÈ«×ÔÓÉÁË£¬Äã¿ÉÒÔ·µ»ØÒ»¶Î×Ö·û´®¡¢Ò»¸öÌØ¶¨¸ñÊ½µÄ±¨ÎÄ¡¢Ò»¸öÆ¯ÁÁµÄÍøÒ³»òÕßÔÚ·şÎñÆ÷µÄºóÌ¨´¦ÀíÒ»¶ÑÊı¾İµÈµÈ£¬ÖÁÓÚ¾ßÌåµÄÂ·ÓÉÊ¹ÓÃÎÄµµ£¬[FlaskµÄÎÄµµ](http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application)Ò²Ğ´µÃºÜÏêÏ¸£¬Ò»²½²½followÒ»±é¾Í»ù±¾ÊìÏ¤ÁË¡£
+è¿™ä¸€æ®µå°±æ˜¯å°†'/hello'è¿™ä¸€è·¯å¾„å’Œhello()å‡½æ•°è¿›è¡Œäº†ç»‘å®šï¼Œè¿™æ ·å½“ç”¨æˆ·è®¿é—®``127.0.0.1:80/hello``æ—¶ï¼Œå°±ä¼šè§¦å‘`hello()`å‡½æ•°ï¼Œä¹Ÿå°±æ˜¯ä¼šè¿”å›'Helloï¼Œ World'è¿™ä¸ªå­—ç¬¦ä¸²ã€‚ç†è§£äº†è¿™ç§**ç»‘å®š**é€»è¾‘ï¼Œé‚£ä¹ˆç”¨è·¯ç”±èƒ½å®ç°å“ªäº›åŠŸèƒ½å°±å®Œå…¨è‡ªç”±äº†ï¼Œä½ å¯ä»¥è¿”å›ä¸€æ®µå­—ç¬¦ä¸²ã€ä¸€ä¸ªç‰¹å®šæ ¼å¼çš„æŠ¥æ–‡ã€ä¸€ä¸ªæ¼‚äº®çš„ç½‘é¡µæˆ–è€…åœ¨æœåŠ¡å™¨çš„åå°å¤„ç†ä¸€å †æ•°æ®ç­‰ç­‰ï¼Œè‡³äºå…·ä½“çš„è·¯ç”±ä½¿ç”¨æ–‡æ¡£ï¼Œ[Flaskçš„æ–‡æ¡£](http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application)ä¹Ÿå†™å¾—å¾ˆè¯¦ç»†ï¼Œä¸€æ­¥æ­¥followä¸€éå°±åŸºæœ¬ç†Ÿæ‚‰äº†ã€‚
 
-## 3.3. Êı¾İ½»»¥
+## 3.3. æ•°æ®äº¤äº’
 
-»ù±¾ÁË½âÁËÂ·ÓÉµÄ°ó¶¨ºÍÊ¹ÓÃÖ®ºó£¬½ÓÏÂÀ´¾ÍÒªÉè¼ÆºËĞÄµÄºóÌ¨Âß¼­ÁË£¨±Ï¾¹±¾ÏîÄ¿Ã»ÓĞÒªÇóÆ¯ÁÁµÄÍøÒ³Éè¼Æ£©£¬¼ÌĞøÔÄ¶ÁÎÄµµ£¬ÔÚFlaskÖĞ£¬ÇëÇó×÷ÎªÒ»¸ö¶ÔÏó±»´¦Àí£¬Õâ¸ö¶ÔÏó°üº¬ÁËºÜ¶à·½·¨ºÍÊôĞÔ£¬Òò´ËÒ²²»ĞèÒªÕ¹¿ªÁË½â£¬ÎÄµµÖĞ¸ø³öµÄÀı×ÓÒÑ¾­×ã¹»ÎÒÃÇÀí½âÁË£º
+åŸºæœ¬äº†è§£äº†è·¯ç”±çš„ç»‘å®šå’Œä½¿ç”¨ä¹‹åï¼Œæ¥ä¸‹æ¥å°±è¦è®¾è®¡æ ¸å¿ƒçš„åå°é€»è¾‘äº†ï¼ˆæ¯•ç«Ÿæœ¬é¡¹ç›®æ²¡æœ‰è¦æ±‚æ¼‚äº®çš„ç½‘é¡µè®¾è®¡ï¼‰ï¼Œç»§ç»­é˜…è¯»æ–‡æ¡£ï¼Œåœ¨Flaskä¸­ï¼Œè¯·æ±‚ä½œä¸ºä¸€ä¸ªå¯¹è±¡è¢«å¤„ç†ï¼Œè¿™ä¸ªå¯¹è±¡åŒ…å«äº†å¾ˆå¤šæ–¹æ³•å’Œå±æ€§ï¼Œå› æ­¤ä¹Ÿä¸éœ€è¦å±•å¼€äº†è§£ï¼Œæ–‡æ¡£ä¸­ç»™å‡ºçš„ä¾‹å­å·²ç»è¶³å¤Ÿæˆ‘ä»¬ç†è§£äº†ï¼š
 
 ```Python
 @app.route('/login', methods=['POST', 'GET'])
@@ -112,66 +112,66 @@ def login():
     return render_template('login.html', error=error)
 ```
 
-ÔÄ¶Á²¢ÄÜÊÊµ±ĞŞ¸ÄÕâÒ»¶Î´úÂë£¬»ù±¾ÉÏrequestµÄÒ»Ğ©»ù±¾ÓÃ·¨¾ÍÒÑ¾­okÁË£¬ÍêÕûµÄrequestÀàÖĞ°üº¬µÄ·½·¨ºÍÊôĞÔ¿ÉÒÔÖ±½Ó²é¿´[requestÀàµÄAPIÎÄµµ](http://flask.pocoo.org/docs/1.0/api/#incoming-request-data)
+é˜…è¯»å¹¶èƒ½é€‚å½“ä¿®æ”¹è¿™ä¸€æ®µä»£ç ï¼ŒåŸºæœ¬ä¸Šrequestçš„ä¸€äº›åŸºæœ¬ç”¨æ³•å°±å·²ç»okäº†ï¼Œå®Œæ•´çš„requestç±»ä¸­åŒ…å«çš„æ–¹æ³•å’Œå±æ€§å¯ä»¥ç›´æ¥æŸ¥çœ‹[requestç±»çš„APIæ–‡æ¡£](http://flask.pocoo.org/docs/1.0/api/#incoming-request-data)
 
-## 3.4. ½Ó¿Úµ÷ÊÔ
+## 3.4. æ¥å£è°ƒè¯•
 
-×îºóËµÒ»µã»ùÓÚÖ®Ç°ÍøÒ³¿ª·¢µÄ½¨Òé£¬ÓÉÓÚÏîÄ¿ÖĞ»áÉæ¼°µ½ÎÄ¼şÉÏ´«ÕâÖÖ²Ù×÷£¬ËùÒÔÔÚµ÷ÊÔµÄ¹ı³ÌÖĞ¿Ï¶¨ĞèÒª·´¸´µÄÉÏ´«ÎÄ¼ş»òÕßÌá½»±íµ¥£¬ÕâÑùÈç¹ûÖ±½ÓÓÃä¯ÀÀÆ÷À´½øĞĞµ÷ÊÔ£¨±ÈÈçÔÚGoogle ChromeÖĞ°´F12£©£¬¿ÉÄÜ¹¹Ôì²âÊÔÊı¾İµÄ¹ı³Ì»áºÜ¸´ÔÓ£¬¶øÇÒÒ²ÓĞºÜ¶àµÄÏŞÖÆ¡£Òò´ËÎÒÔÚµ÷ÊÔµÄ¹ı³ÌÖĞÓÃµ½ÁË[Postman](https://www.getpostman.com/)£¬ÕâÊÇÒ»¸öÓÃÓÚ½Ó¿Úµ÷ÊÔ£¨²»½ö½öÏŞÓÚÍøÒ³£©µÄ¹¤¾ß£¬½èÖúPostman¿ÉÒÔºÜÈİÒ×µØ¹¹Ôì¸÷ÖÖhttp±¨ÎÄ£¬°üÀ¨Get¡¢Post·½·¨µÄÑ¡Ôñ¡¢Ìá½»ÎÄ¼ş¡¢¹¹Ôì¸´ÔÓ±íµ¥¡¢¹¹ÔìhttpÍ·µÈµÈ£¬×îºó·ÅÒ»ÕÅPostmanµÄ±íµ¥¹¹ÔìÆ÷½ØÍ¼£¬»¹ÊÇºÜÇ¿´óµÄ£º
-![Postman¹¹Ôì±íµ¥](https://raw.githubusercontent.com/imdonnie/playground/master/Markdown-Images/Postman¹¹Ôì±íµ¥.png)
+æœ€åè¯´ä¸€ç‚¹åŸºäºä¹‹å‰ç½‘é¡µå¼€å‘çš„å»ºè®®ï¼Œç”±äºé¡¹ç›®ä¸­ä¼šæ¶‰åŠåˆ°æ–‡ä»¶ä¸Šä¼ è¿™ç§æ“ä½œï¼Œæ‰€ä»¥åœ¨è°ƒè¯•çš„è¿‡ç¨‹ä¸­è‚¯å®šéœ€è¦åå¤çš„ä¸Šä¼ æ–‡ä»¶æˆ–è€…æäº¤è¡¨å•ï¼Œè¿™æ ·å¦‚æœç›´æ¥ç”¨æµè§ˆå™¨æ¥è¿›è¡Œè°ƒè¯•ï¼ˆæ¯”å¦‚åœ¨Google Chromeä¸­æŒ‰F12ï¼‰ï¼Œå¯èƒ½æ„é€ æµ‹è¯•æ•°æ®çš„è¿‡ç¨‹ä¼šå¾ˆå¤æ‚ï¼Œè€Œä¸”ä¹Ÿæœ‰å¾ˆå¤šçš„é™åˆ¶ã€‚å› æ­¤æˆ‘åœ¨è°ƒè¯•çš„è¿‡ç¨‹ä¸­ç”¨åˆ°äº†[Postman](https://www.getpostman.com/)ï¼Œè¿™æ˜¯ä¸€ä¸ªç”¨äºæ¥å£è°ƒè¯•ï¼ˆä¸ä»…ä»…é™äºç½‘é¡µï¼‰çš„å·¥å…·ï¼Œå€ŸåŠ©Postmanå¯ä»¥å¾ˆå®¹æ˜“åœ°æ„é€ å„ç§httpæŠ¥æ–‡ï¼ŒåŒ…æ‹¬Getã€Postæ–¹æ³•çš„é€‰æ‹©ã€æäº¤æ–‡ä»¶ã€æ„é€ å¤æ‚è¡¨å•ã€æ„é€ httpå¤´ç­‰ç­‰ï¼Œæœ€åæ”¾ä¸€å¼ Postmançš„è¡¨å•æ„é€ å™¨æˆªå›¾ï¼Œè¿˜æ˜¯å¾ˆå¼ºå¤§çš„ï¼š
+![Postmanæ„é€ è¡¨å•](https://raw.githubusercontent.com/imdonnie/playground/master/Markdown-Images/Postmanæ„é€ è¡¨å•.png)
 
-# 4. DockerÑ§Ï°ºÍÊ¹ÓÃ
+# 4. Dockerå­¦ä¹ å’Œä½¿ç”¨
 
-## 4.1. ¸ÅÄîÀí½â
+## 4.1. æ¦‚å¿µç†è§£
 
-Èç¹ûËµ¶ÔÓÚÓĞÒ»¶¨Python»ù´¡µÄÈËÀ´Ëµ£¬Ğ´³öÒ»¸ö¼òµ¥µÄFlaskÓ¦ÓÃ¿ÉÄÜÖ»ÊÇÒ»Á½¸öĞ¡Ê±µÄÊÂÇé£¬ÄÇÃ´DockerÏÔÈ»Ã»ÓĞÕâÃ´ÈİÒ×£¬ÆäÖĞ¸÷ÖÖ¸ÅÄî¡¢Âß¼­ÉõÖÁÊÇÕÜÑ§¶¼¿ÉÄÜ³ÉÎªÔËÓÃDockerµÄ×è°­¡£
-ÈÔÈ»ÊÇ´Ó[ÎÄµµ](https://docs.docker.com/get-started/)¿ªÊ¼¡£µÚÒ»²¿·ÖÖ÷ÒªÊÇ¶ÔDockerµÄÉè¼ÆÄ¿µÄµÄ½éÉÜ£¬Í¬Ê±Ò²Òı³öÁËÒ»Ğ©»ù±¾µÄ¸ÅÄî¡£ÒıÓÃÒ»¶ÎDockerÔ­ÎÄµÄ½²½â£º
+å¦‚æœè¯´å¯¹äºæœ‰ä¸€å®šPythonåŸºç¡€çš„äººæ¥è¯´ï¼Œå†™å‡ºä¸€ä¸ªç®€å•çš„Flaskåº”ç”¨å¯èƒ½åªæ˜¯ä¸€ä¸¤ä¸ªå°æ—¶çš„äº‹æƒ…ï¼Œé‚£ä¹ˆDockeræ˜¾ç„¶æ²¡æœ‰è¿™ä¹ˆå®¹æ˜“ï¼Œå…¶ä¸­å„ç§æ¦‚å¿µã€é€»è¾‘ç”šè‡³æ˜¯å“²å­¦éƒ½å¯èƒ½æˆä¸ºè¿ç”¨Dockerçš„é˜»ç¢ã€‚
+ä»ç„¶æ˜¯ä»[æ–‡æ¡£](https://docs.docker.com/get-started/)å¼€å§‹ã€‚ç¬¬ä¸€éƒ¨åˆ†ä¸»è¦æ˜¯å¯¹Dockerçš„è®¾è®¡ç›®çš„çš„ä»‹ç»ï¼ŒåŒæ—¶ä¹Ÿå¼•å‡ºäº†ä¸€äº›åŸºæœ¬çš„æ¦‚å¿µã€‚å¼•ç”¨ä¸€æ®µDockeråŸæ–‡çš„è®²è§£ï¼š
 > A container is launched by running an image. An image is an executable package that includes everything needed to run an application--the code, a runtime, libraries, environment variables, and configuration files.
 > A container is a runtime instance of an image--what the image becomes in memory when executed (that is, an image with state, or a user process). You can see a list of your running containers with the command, docker ps, just as you would in Linux.
 
-?Àí½â£ºimageÊÇÏà¶Ô¾²Ì¬µÄ£¬°üº¬ÁËÔËĞĞÒ»¸öappĞèÒªµÄ´úÂëºÍÒÀÀµ£¬ÀàËÆ¿ÉÖ´ĞĞÎÄ¼şºÍÅäÖÃÎÄ¼şµÄ¼¯ºÏ£»µ±imageÔËĞĞÆğÀ´Ê±£¨·ÅÈëÄÚ´æÊ±£©³ÉÎªÒ»¸öcontainer£¬ÀàËÆ½ø³Ì¡£
+ç†è§£ï¼šimageæ˜¯ç›¸å¯¹é™æ€çš„ï¼ŒåŒ…å«äº†è¿è¡Œä¸€ä¸ªappéœ€è¦çš„ä»£ç å’Œä¾èµ–ï¼Œç±»ä¼¼å¯æ‰§è¡Œæ–‡ä»¶å’Œé…ç½®æ–‡ä»¶çš„é›†åˆï¼›å½“imageè¿è¡Œèµ·æ¥æ—¶ï¼ˆæ”¾å…¥å†…å­˜æ—¶ï¼‰æˆä¸ºä¸€ä¸ªcontainerï¼Œç±»ä¼¼è¿›ç¨‹ã€‚
 
-½Ó×ÅÍùÏÂ¿´£º
+æ¥ç€å¾€ä¸‹çœ‹ï¼š
 >Containerization makes CI/CD seamless. For example:
 >
 >- applications have no system dependencies
 >- updates can be pushed to any part of a distributed application
 >- resource density can be optimized.
 
-?Àí½â£ºÀûÓÃdockerµÄÒ»Ğ©ºÃ´¦£¬Ó¦ÓÃÓë²Ù×÷ÏµÍ³½âñîºÍ£¬±ãÓÚ³ÖĞø¼¯³ÉºÍ³ÖĞø·¢²¼£¬ÓÅ»¯×ÊÔ´ÅäÖÃ¡£**±¾ÏîÄ¿ÎªÁË¼ò»¯Éú³ÉimageµÄ¹ı³Ì£¬½áºÏDockerHubºÍGitHubÅäÖÃÁËÒ»¸ö¼òµ¥µÄ³ÖĞø¼¯³É·şÎñ£¬¾ßÌåÊµÏÖ·½·¨¼ûÖ®ºóµÄÕÂ½Ú¡£**
+?ç†è§£ï¼šåˆ©ç”¨dockerçš„ä¸€äº›å¥½å¤„ï¼Œåº”ç”¨ä¸æ“ä½œç³»ç»Ÿè§£è€¦å’Œï¼Œä¾¿äºæŒç»­é›†æˆå’ŒæŒç»­å‘å¸ƒï¼Œä¼˜åŒ–èµ„æºé…ç½®ã€‚**æœ¬é¡¹ç›®ä¸ºäº†ç®€åŒ–ç”Ÿæˆimageçš„è¿‡ç¨‹ï¼Œç»“åˆDockerHubå’ŒGitHubé…ç½®äº†ä¸€ä¸ªç®€å•çš„æŒç»­é›†æˆæœåŠ¡ï¼Œå…·ä½“å®ç°æ–¹æ³•è§ä¹‹åçš„ç« èŠ‚ã€‚**
 
-## 4.2. DockerfileºÍContainer
+## 4.2. Dockerfileå’ŒContainer
 
-µÚ¶ş²¿·Ö¼ÌĞø½éÉÜÁËÒ»Ğ©¸ÅÄîÒÔ¼°ÕâĞ©¸ÅÄîÖ®¼äµÄ¹ØÏµ×öÁË½éÉÜ£º
->It¡¯s time to begin building an app the Docker way. We start at the bottom of the hierarchy of such an app, which is a container, which we cover on this page. Above this level is a service, which defines how containers behave in production, covered in Part 3. Finally, at the top level is the stack, defining the interactions of all the services, covered in Part 5.
+ç¬¬äºŒéƒ¨åˆ†ç»§ç»­ä»‹ç»äº†ä¸€äº›æ¦‚å¿µä»¥åŠè¿™äº›æ¦‚å¿µä¹‹é—´çš„å…³ç³»åšäº†ä»‹ç»ï¼š
+>Itâ€™s time to begin building an app the Docker way. We start at the bottom of the hierarchy of such an app, which is a container, which we cover on this page. Above this level is a service, which defines how containers behave in production, covered in Part 3. Finally, at the top level is the stack, defining the interactions of all the services, covered in Part 5.
 
-?Àí½â£ºdockerÉÏµÄÓ¦ÓÃ²ã´Î£º×îµ×²ãÎªcontainer£¨ÀàËÆ½ø³Ì£©£¬ÉÏ²ãÎªservice£¬¶¨ÒåÁËcontainerÈçºÎ¹¤×÷£¨part3ÄÚÈİ£©£¬¶à¸öservice¶Ñµş³Éstack£¬Í¬Ê±stack¶¨ÒåÁËserviceÖ®¼äµÄ½»»¥£¨part5£©¡£
+ç†è§£ï¼šdockerä¸Šçš„åº”ç”¨å±‚æ¬¡ï¼šæœ€åº•å±‚ä¸ºcontainerï¼ˆç±»ä¼¼è¿›ç¨‹ï¼‰ï¼Œä¸Šå±‚ä¸ºserviceï¼Œå®šä¹‰äº†containerå¦‚ä½•å·¥ä½œï¼ˆpart3å†…å®¹ï¼‰ï¼Œå¤šä¸ªserviceå †å æˆstackï¼ŒåŒæ—¶stackå®šä¹‰äº†serviceä¹‹é—´çš„äº¤äº’ï¼ˆpart5ï¼‰ã€‚
 
-½Ó×Å£¬ÎÄµµ½âÊÍÁËDockerÖĞÊ®·ÖÖØÒªµÄÄÚÈİ£ºDockerfile£¬²¢ÇÒ¸ø³öÁËÒ»¸ö¼òµ¥µÄDockerfileÑùÀı£º
->Dockerfile defines what goes on in the environment inside your container. Access to resources like networking interfaces and disk drives is virtualized inside this environment, which is isolated from the rest of your system, so you need to map ports to the outside world, and be specific about what files you want to ¡°copy in¡± to that environment. However, after doing that, you can expect that the build of your app defined in this Dockerfile behaves exactly the same wherever it runs.
+æ¥ç€ï¼Œæ–‡æ¡£è§£é‡Šäº†Dockerä¸­ååˆ†é‡è¦çš„å†…å®¹ï¼šDockerfileï¼Œå¹¶ä¸”ç»™å‡ºäº†ä¸€ä¸ªç®€å•çš„Dockerfileæ ·ä¾‹ï¼š
+>Dockerfile defines what goes on in the environment inside your container. Access to resources like networking interfaces and disk drives is virtualized inside this environment, which is isolated from the rest of your system, so you need to map ports to the outside world, and be specific about what files you want to â€œcopy inâ€ to that environment. However, after doing that, you can expect that the build of your app defined in this Dockerfile behaves exactly the same wherever it runs.
 
 `Dockerfile`
 
 ```Dockerfile
 # Use an official Python runtime as a parent image
-# ÒÔÒ»¸ö¾«¼ò°æµÄpython-3»·¾³×÷Îªparent image£¨ÆäËûµÄ¸Ä¶¯¶¼ÊÇ»ùÓÚÕâ¸ö¾µÏñÖ®ÉÏµÄ£©
+# ä»¥ä¸€ä¸ªç²¾ç®€ç‰ˆçš„python-3ç¯å¢ƒä½œä¸ºparent imageï¼ˆå…¶ä»–çš„æ”¹åŠ¨éƒ½æ˜¯åŸºäºè¿™ä¸ªé•œåƒä¹‹ä¸Šçš„ï¼‰
 FROM python:3-slim
 # Set the working directory to /app
-# Éè¶¨ /app Îª¹¤×÷Â·¾¶
+# è®¾å®š /app ä¸ºå·¥ä½œè·¯å¾„
 WORKDIR /app
 # Copy the current directory contents into the container at /app
-# ½«µ±Ç°Â·¾¶£¨Ô´´úÂëËùÔÚÂ·¾¶£©¿½±´½øcontainerÖĞµÄ /appÂ·¾¶ÖĞ
+# å°†å½“å‰è·¯å¾„ï¼ˆæºä»£ç æ‰€åœ¨è·¯å¾„ï¼‰æ‹·è´è¿›containerä¸­çš„ /appè·¯å¾„ä¸­
 COPY . /app
 # Install any needed packages specified in requirements.txt
-# ¸ù¾İrequirements.txtÖĞµÄÒªÇóÅäÖÃ»·¾³
+# æ ¹æ®requirements.txtä¸­çš„è¦æ±‚é…ç½®ç¯å¢ƒ
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 # Make port 80 available to the world outside this container
-# ½«Õâ¸öcontainerµÄ80¶Ë¿Ú±©Â¶³öÀ´
+# å°†è¿™ä¸ªcontainerçš„80ç«¯å£æš´éœ²å‡ºæ¥
 EXPOSE 80
 # Define environment variable
-# ¶¨ÒåÒ»¸ö»·¾³±äÁ¿£¬ÔÚÕâ¶Î´úÂëÖĞËÆºõÃ»Ê²Ã´×÷ÓÃ£¬µ«ÊÇÖ®ºó»áÓÃµ½µÄ
+# å®šä¹‰ä¸€ä¸ªç¯å¢ƒå˜é‡ï¼Œåœ¨è¿™æ®µä»£ç ä¸­ä¼¼ä¹æ²¡ä»€ä¹ˆä½œç”¨ï¼Œä½†æ˜¯ä¹‹åä¼šç”¨åˆ°çš„
 ENV NAME World
 # Run app.py when the container launches
-# ÔÚcontainerÖĞÖ´ĞĞ python app.py Õâ¸öÃüÁî
+# åœ¨containerä¸­æ‰§è¡Œ python app.py è¿™ä¸ªå‘½ä»¤
 CMD ["python", "app.py"]
 ```
 
@@ -182,7 +182,7 @@ Flask
 Redis
 ```
 
-?Àí½â£ºÔÚÕâÒ»½×¶ÎÒªÍêÈ«Àí½âÕâÒ»¶ÎµÄĞ´·¨»¹ÊÇ±È½ÏÀ§ÄÑµÄ£¬¿ÉÒÔ½áºÏ½Å±¾ÖĞµÄ×¢ÊÍ£¨ËäÈ»¿Ï¶¨»¹ÊÇÓĞÒÉÎÊ£©£¬Àí½âµ½DockerfileÓÃÓÚ¶¨ÒåcontainerµÄÆô¶¯¶¯×÷£¬Í¬Ê±¶¨Òå½Ó¿ÚÓ³ÉäµÈĞÅÏ¢£¬requiremnets.txtÓÃÓÚÅäÖÃpythonÖĞĞèÒªµÄ¿â£¬ÕâÑù¾Í×ã¹»ÁË¡£
+ç†è§£ï¼šåœ¨è¿™ä¸€é˜¶æ®µè¦å®Œå…¨ç†è§£è¿™ä¸€æ®µçš„å†™æ³•è¿˜æ˜¯æ¯”è¾ƒå›°éš¾çš„ï¼Œå¯ä»¥ç»“åˆè„šæœ¬ä¸­çš„æ³¨é‡Šï¼ˆè™½ç„¶è‚¯å®šè¿˜æ˜¯æœ‰ç–‘é—®ï¼‰ï¼Œç†è§£åˆ°Dockerfileç”¨äºå®šä¹‰containerçš„å¯åŠ¨åŠ¨ä½œï¼ŒåŒæ—¶å®šä¹‰æ¥å£æ˜ å°„ç­‰ä¿¡æ¯ï¼Œrequiremnets.txtç”¨äºé…ç½®pythonä¸­éœ€è¦çš„åº“ï¼Œè¿™æ ·å°±è¶³å¤Ÿäº†ã€‚
 
 `app.py`
 
@@ -213,24 +213,24 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
 ```
 
-?Àí½â£º`app.py`±¾ÉíÃ»Ê²Ã´Ì«¶à¿ÉËµµÄ£¬Ö÷Òª¾ÍÊÇÒ»¸ö²âÊÔÓÃÀı£¬Í¨¶ÁÒ»±éÀí½âÇå³ş¾ÍĞĞ£¬ÕıºÃÒ²»Ø¹ËÁËÒ»ÏÂµÚÒ»ÕÂ¶ÔFlaskµÄ½éÉÜ¡£
+ç†è§£ï¼š`app.py`æœ¬èº«æ²¡ä»€ä¹ˆå¤ªå¤šå¯è¯´çš„ï¼Œä¸»è¦å°±æ˜¯ä¸€ä¸ªæµ‹è¯•ç”¨ä¾‹ï¼Œé€šè¯»ä¸€éç†è§£æ¸…æ¥šå°±è¡Œï¼Œæ­£å¥½ä¹Ÿå›é¡¾äº†ä¸€ä¸‹ç¬¬ä¸€ç« å¯¹Flaskçš„ä»‹ç»ã€‚
 
-¸´ÖÆÍêÉÏÃæÕâĞ©´úÂëºó£¬¾Í¿ÉÒÔ°´ÕÕÎÄµµµÄËµÃ÷À´ÊÔ×ÅÅÜÒ»ÏÂµÚÒ»¸öDocker ContainerÁË£¬Ê×ÏÈ£¬ÀàËÆLinuxÖĞµÄMakefile£¬DockerfileÊÇ¶ÔÒ»¶ÑÔ´´úÂë½øĞĞ±àÒëµÄ½Å±¾ÎÄ¼ş£¬ÔÚÅäÖÃºÃµÄDocker»·¾³£¬¿ÉÒÔÖ±½ÓÃüÁîĞĞ±àÒëÔËĞĞ¡£
+å¤åˆ¶å®Œä¸Šé¢è¿™äº›ä»£ç åï¼Œå°±å¯ä»¥æŒ‰ç…§æ–‡æ¡£çš„è¯´æ˜æ¥è¯•ç€è·‘ä¸€ä¸‹ç¬¬ä¸€ä¸ªDocker Containeräº†ï¼Œé¦–å…ˆï¼Œç±»ä¼¼Linuxä¸­çš„Makefileï¼ŒDockerfileæ˜¯å¯¹ä¸€å †æºä»£ç è¿›è¡Œç¼–è¯‘çš„è„šæœ¬æ–‡ä»¶ï¼Œåœ¨é…ç½®å¥½çš„Dockerç¯å¢ƒï¼Œå¯ä»¥ç›´æ¥å‘½ä»¤è¡Œç¼–è¯‘è¿è¡Œã€‚
 
-Ê×ÏÈÈ·ÈÏÒ»ÏÂÄ¿Â¼ÖĞµÄÎÄ¼ş¶¼ÆëÁË£º
+é¦–å…ˆç¡®è®¤ä¸€ä¸‹ç›®å½•ä¸­çš„æ–‡ä»¶éƒ½é½äº†ï¼š
 
 ```Shell
 $ ls
 Dockerfile app.py requirements.txt
 ```
 
-È»ºóÒ»ĞĞÃüÁîÖ±½Ó±àÒë£º
+ç„¶åä¸€è¡Œå‘½ä»¤ç›´æ¥ç¼–è¯‘ï¼š
 
 ```Shell
 docker build -t friendlyhello .
 ```
 
-±àÒëÍê³ÉºóÔËĞĞdockerÃüÁî¿´Ò»ÏÂ£º
+ç¼–è¯‘å®Œæˆåè¿è¡Œdockerå‘½ä»¤çœ‹ä¸€ä¸‹ï¼š
 
 ```Shell
 $ docker image ls
@@ -239,16 +239,16 @@ REPOSITORY            TAG                 IMAGE ID
 friendlyhello         latest              326387cea398
 ```
 
-¿´µ½friendlyhelloÒÑ¾­³É¹¦±à³öÀ´£¬ÄÇÃ´DockerfileÕâ²¿·Ö¾Í»ù±¾okÁË£¬½ÓÏÂÀ´¿ÉÒÔ¼ÌĞø²Î¿¼ÎÄµµ£¬ÔËĞĞÒ»ÏÂ¾ÍĞĞ¡£
+çœ‹åˆ°friendlyhelloå·²ç»æˆåŠŸç¼–å‡ºæ¥ï¼Œé‚£ä¹ˆDockerfileè¿™éƒ¨åˆ†å°±åŸºæœ¬okäº†ï¼Œæ¥ä¸‹æ¥å¯ä»¥ç»§ç»­å‚è€ƒæ–‡æ¡£ï¼Œè¿è¡Œä¸€ä¸‹å°±è¡Œã€‚
 
-## 4.3. ¸ü¶àContainer²Ù×÷
+## 4.3. æ›´å¤šContaineræ“ä½œ
 
-Ç°ÎÄÒÑ¾­Íê³ÉÁËÒ»¸ö¼òµ¥µÄDockefileµÄ±àĞ´£¬µ«ÊÇÃ÷ÏÔ»¹ÓĞºÜ¶àÎÊÌâĞü¶øÎ´¾ö£¬±ÈÈç£ºÓ¦¸ÃÈçºÎµ÷ÊÔContainer£¿Èç¹û³ÌĞòÔËĞĞµÄ»·¾³±È½Ï¸´ÔÓÊ±¿ÉÒÔÓÃÒ»¸öDockerfile¸ã¶¨Ã´£¨±ÈÈçPython+Tensorflow+Flask+Cassandra...£©£¿²»Í¬µÄContainerÖ®¼äÈç¹ûÍ¬Ê±ÔËĞĞ£¬ÄÇÃ´ËüÃÇÖ®¼äÓ¦¸ÃÈçºÎ½»»¥ÄØ£¿ÕâĞ©ÎÊÌâ¿ÉÄÜÔÚÕâÒ»½ÚÎŞ·¨È«²¿½â¾ö£¬µ«ÊÇÕâ¶¼ÊÇÒªÍê³ÉÏîÄ¿ËùÎŞ·¨ÈÆ¿ªµÄ¡£
+å‰æ–‡å·²ç»å®Œæˆäº†ä¸€ä¸ªç®€å•çš„Dockefileçš„ç¼–å†™ï¼Œä½†æ˜¯æ˜æ˜¾è¿˜æœ‰å¾ˆå¤šé—®é¢˜æ‚¬è€Œæœªå†³ï¼Œæ¯”å¦‚ï¼šåº”è¯¥å¦‚ä½•è°ƒè¯•Containerï¼Ÿå¦‚æœç¨‹åºè¿è¡Œçš„ç¯å¢ƒæ¯”è¾ƒå¤æ‚æ—¶å¯ä»¥ç”¨ä¸€ä¸ªDockerfileæå®šä¹ˆï¼ˆæ¯”å¦‚Python+Tensorflow+Flask+Cassandra...ï¼‰ï¼Ÿä¸åŒçš„Containerä¹‹é—´å¦‚æœåŒæ—¶è¿è¡Œï¼Œé‚£ä¹ˆå®ƒä»¬ä¹‹é—´åº”è¯¥å¦‚ä½•äº¤äº’å‘¢ï¼Ÿè¿™äº›é—®é¢˜å¯èƒ½åœ¨è¿™ä¸€èŠ‚æ— æ³•å…¨éƒ¨è§£å†³ï¼Œä½†æ˜¯è¿™éƒ½æ˜¯è¦å®Œæˆé¡¹ç›®æ‰€æ— æ³•ç»•å¼€çš„ã€‚
 
-Ê×ÏÈ½áºÏDockerµÄ¹Ù·½ÎÄµµ£¬¿ÉÒÔ½øÒ»²½ÁË½âdocker-compose.yml£º
+é¦–å…ˆç»“åˆDockerçš„å®˜æ–¹æ–‡æ¡£ï¼Œå¯ä»¥è¿›ä¸€æ­¥äº†è§£docker-compose.ymlï¼š
 >A docker-compose.yml file is a YAML file that defines how Docker containers should behave in production.
 
-?Àí½â£ºdocker-compose.ymlÓÃÓÚ¿ØÖÆcontainerÓ¦¸ÃÈçºÎÔËĞĞ£¬Ò²¾ÍÊÇ½«container°ü×°³Éservice£¬»òÕß¿ÉÒÔ½Ğ×ö**ÈİÆ÷±àÅÅ**£¬ÏÂÃæÊÇÎÄµµÖĞ¸ø³öµÄÀı×Ó£º
+ç†è§£ï¼šdocker-compose.ymlç”¨äºæ§åˆ¶containeråº”è¯¥å¦‚ä½•è¿è¡Œï¼Œä¹Ÿå°±æ˜¯å°†containeråŒ…è£…æˆserviceï¼Œæˆ–è€…å¯ä»¥å«åš**å®¹å™¨ç¼–æ’**ï¼Œä¸‹é¢æ˜¯æ–‡æ¡£ä¸­ç»™å‡ºçš„ä¾‹å­ï¼š
 
 `docker-compose.yml`
 
@@ -274,26 +274,26 @@ networks:
   webnet:
 ```
 
-ÎÄµµÖĞ¶ÔÓÚÕâÒ»¶Îdocker-compose.ymlµÄ½âÊÍ£º
+æ–‡æ¡£ä¸­å¯¹äºè¿™ä¸€æ®µdocker-compose.ymlçš„è§£é‡Šï¼š
 >This docker-compose.yml file tells Docker to do the following:
 >Pull the image we uploaded in step 2 from the registry.
 >
 >- Run 5 instances of that image as a service called web, limiting each one to use, at  most, 10% of the CPU (across all cores), and 50MB of RAM.
 >- Immediately restart containers if one fails.
->- Map port 4000 on the host to web¡¯s port 80.
->- Instruct web¡¯s containers to share port 80 via a load-balanced network called webnet. (Internally, the containers themselves publish to web¡¯s port 80 at an ephemeral port.)
+>- Map port 4000 on the host to webâ€™s port 80.
+>- Instruct webâ€™s containers to share port 80 via a load-balanced network called webnet. (Internally, the containers themselves publish to webâ€™s port 80 at an ephemeral port.)
 >- Define the webnet network with the default settings (which is a load-balanced overlay network).
 
-ÏÂÃæÈÔÈ»ÊÇÒ»¶Î²Ù×÷Ö¸µ¼£¬Ö±½Ó°áÔËÔ­ÎÄÁË£º
+ä¸‹é¢ä»ç„¶æ˜¯ä¸€æ®µæ“ä½œæŒ‡å¯¼ï¼Œç›´æ¥æ¬è¿åŸæ–‡äº†ï¼š
 
-ÔËĞĞ²½Öè£º
+è¿è¡Œæ­¥éª¤ï¼š
 
 ```Shell
 docker swarm init
 docker stack deploy -c docker-compose.yml getstartedlab
 ```
 
->Our single service stack is running 5 container instances of our deployed image on one host. Let¡¯s investigate.
+>Our single service stack is running 5 container instances of our deployed image on one host. Letâ€™s investigate.
 >Get the service ID for the one service in our application:
 `docker service ls`
 >Look for output for the web service, prepended with your app name. If you named it the same as shown in this example, the name isgetstartedlab_web. The service ID is listed as well, along with the number of replicas, image name, and exposed ports.
@@ -301,11 +301,11 @@ docker stack deploy -c docker-compose.yml getstartedlab
 `docker service ps getstartedlab_web`
 >Tasks also show up if you just list all the containers on your system, though that is not filtered by service:
 `docker container ls -q`
->¹Ø±Õ²½Öè£º
+>å…³é—­æ­¥éª¤ï¼š
 >Take the app down with docker stack rm:
 `docker stack rm getstartedlab`
 >Take down the swarm.
 `docker swarm leave --force`
 
-?Àí½â£ºÔËĞĞ×´Ì¬ÏÂµÄ¶à¸ö¸ÅÄî£¬stack>service>container(=running image)£¬or image+Dockerfile=container, container+docker-compose.yml=service
-ÔÙ´ÎÇ¿µ÷£¬Dockerfile¶¨ÒåÁËimageµÄÆô¶¯£¨±ÈÈç¼ÓÔØÒÀÀµ£¬»·¾³±äÁ¿£¬ÔËĞĞºÍ±àÒëÖ¸Áî£¬ÀàËÆMakefile£©£¬YAML¶¨ÒåÁËÒ»×écontainerµÄÆô¶¯£¨±ÈÈç×ÊÔ´Õ¼ÓÃ£¬¶Ë¿ÚÓ³Éä£¬scaleÉèÖÃ£¬¸ºÔØ¾ùºâ£¬ÀàËÆÒ»¸ö×ÊÔ´µ÷¶ÈµÄÅäÖÃÎÄ¼ş£©
+ç†è§£ï¼šè¿è¡ŒçŠ¶æ€ä¸‹çš„å¤šä¸ªæ¦‚å¿µï¼Œstack>service>container(=running image)ï¼Œor image+Dockerfile=container, container+docker-compose.yml=service
+å†æ¬¡å¼ºè°ƒï¼ŒDockerfileå®šä¹‰äº†imageçš„å¯åŠ¨ï¼ˆæ¯”å¦‚åŠ è½½ä¾èµ–ï¼Œç¯å¢ƒå˜é‡ï¼Œè¿è¡Œå’Œç¼–è¯‘æŒ‡ä»¤ï¼Œç±»ä¼¼Makefileï¼‰ï¼ŒYAMLå®šä¹‰äº†ä¸€ç»„containerçš„å¯åŠ¨ï¼ˆæ¯”å¦‚èµ„æºå ç”¨ï¼Œç«¯å£æ˜ å°„ï¼Œscaleè®¾ç½®ï¼Œè´Ÿè½½å‡è¡¡ï¼Œç±»ä¼¼ä¸€ä¸ªèµ„æºè°ƒåº¦çš„é…ç½®æ–‡ä»¶ï¼‰
