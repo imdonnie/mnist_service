@@ -128,7 +128,7 @@ def login():
 > A container is launched by running an image. An image is an executable package that includes everything needed to run an application--the code, a runtime, libraries, environment variables, and configuration files.
 > A container is a runtime instance of an image--what the image becomes in memory when executed (that is, an image with state, or a user process). You can see a list of your running containers with the command, docker ps, just as you would in Linux.
 
-?理解：image是相对静态的，包含了运行一个app需要的代码和依赖，类似可执行文件和配置文件的集合；当image运行起来时（放入内存时）成为一个container，类似进程。
+理解：image是相对静态的，包含了运行一个app需要的代码和依赖，类似可执行文件和配置文件的集合；当image运行起来时（放入内存时）成为一个container，类似进程。
 
 接着往下看：
 >Containerization makes CI/CD seamless. For example:
@@ -137,14 +137,14 @@ def login():
 >- updates can be pushed to any part of a distributed application
 >- resource density can be optimized.
 
-?理解：利用docker的一些好处，应用与操作系统解耦和，便于持续集成和持续发布，优化资源配置。**本项目为了简化生成image的过程，结合DockerHub和GitHub配置了一个简单的持续集成服务，具体实现方法见之后的章节。**
+理解：利用docker的一些好处，应用与操作系统解耦和，便于持续集成和持续发布，优化资源配置。**本项目为了简化生成image的过程，结合DockerHub和GitHub配置了一个简单的持续集成服务，具体实现方法见之后的章节。**
 
 ## 4.2. Dockerfile和Container
 
 第二部分继续介绍了一些概念以及这些概念之间的关系做了介绍：
 >It’s time to begin building an app the Docker way. We start at the bottom of the hierarchy of such an app, which is a container, which we cover on this page. Above this level is a service, which defines how containers behave in production, covered in Part 3. Finally, at the top level is the stack, defining the interactions of all the services, covered in Part 5.
 
-?理解：docker上的应用层次：最底层为container（类似进程），上层为service，定义了container如何工作（part3内容），多个service堆叠成stack，同时stack定义了service之间的交互（part5）。
+理解：docker上的应用层次：最底层为container（类似进程），上层为service，定义了container如何工作（part3内容），多个service堆叠成stack，同时stack定义了service之间的交互（part5）。
 
 接着，文档解释了Docker中十分重要的内容：Dockerfile，并且给出了一个简单的Dockerfile样例：
 >Dockerfile defines what goes on in the environment inside your container. Access to resources like networking interfaces and disk drives is virtualized inside this environment, which is isolated from the rest of your system, so you need to map ports to the outside world, and be specific about what files you want to “copy in” to that environment. However, after doing that, you can expect that the build of your app defined in this Dockerfile behaves exactly the same wherever it runs.
@@ -182,7 +182,7 @@ Flask
 Redis
 ```
 
-?理解：在这一阶段要完全理解这一段的写法还是比较困难的，可以结合脚本中的注释（虽然肯定还是有疑问），理解到Dockerfile用于定义container的启动动作，同时定义接口映射等信息，requiremnets.txt用于配置python中需要的库，这样就足够了。
+理解：在这一阶段要完全理解这一段的写法还是比较困难的，可以结合脚本中的注释（虽然肯定还是有疑问），理解到Dockerfile用于定义container的启动动作，同时定义接口映射等信息，requiremnets.txt用于配置python中需要的库，这样就足够了。
 
 `app.py`
 
@@ -213,7 +213,7 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
 ```
 
-?理解：`app.py`本身没什么太多可说的，主要就是一个测试用例，通读一遍理解清楚就行，正好也回顾了一下第一章对Flask的介绍。
+理解：`app.py`本身没什么太多可说的，主要就是一个测试用例，通读一遍理解清楚就行，正好也回顾了一下第一章对Flask的介绍。
 
 复制完上面这些代码后，就可以按照文档的说明来试着跑一下第一个Docker Container了，首先，类似Linux中的Makefile，Dockerfile是对一堆源代码进行编译的脚本文件，在配置好的Docker环境，可以直接命令行编译运行。
 
@@ -248,7 +248,7 @@ friendlyhello         latest              326387cea398
 首先结合Docker的官方文档，可以进一步了解docker-compose.yml：
 >A docker-compose.yml file is a YAML file that defines how Docker containers should behave in production.
 
-?理解：docker-compose.yml用于控制container应该如何运行，也就是将container包装成service，或者可以叫做**容器编排**，下面是文档中给出的例子：
+理解：docker-compose.yml用于控制container应该如何运行，也就是将container包装成service，或者可以叫做**容器编排**，下面是文档中给出的例子：
 
 `docker-compose.yml`
 
@@ -307,5 +307,5 @@ docker stack deploy -c docker-compose.yml getstartedlab
 >Take down the swarm.
 `docker swarm leave --force`
 
-?理解：运行状态下的多个概念，stack>service>container(=running image)，or image+Dockerfile=container, container+docker-compose.yml=service
+理解：运行状态下的多个概念，stack>service>container(=running image)，or image+Dockerfile=container, container+docker-compose.yml=service
 再次强调，Dockerfile定义了image的启动（比如加载依赖，环境变量，运行和编译指令，类似Makefile），YAML定义了一组container的启动（比如资源占用，端口映射，scale设置，负载均衡，类似一个资源调度的配置文件）
