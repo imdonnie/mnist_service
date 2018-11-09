@@ -87,7 +87,7 @@ cassandra-driver安装时一直显示： Running setup.py bdist_wheel for cassan
 import cv2时报：error while loading shared libraries: libartsc.so.0: cannot open shared object file: No such file
 因为用的是slim版本的python image，可能缺一些库，所以牺牲速度换了stretch版本的
 
-- [x] issue9【在docker容器中运行keras时报错】
+- [x] issue9：【在docker容器中运行keras时报错】
 
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
